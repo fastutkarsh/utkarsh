@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Creative Website</title>
+
+  <style>
+
+    /* ===== BODY ===== */
+
+    body{
+      margin: 0;
+      font-family: Arial;
+      background-color: rgb(240,240,240);
+    }
+
+
+    /* ===== NAVBAR ===== */
+
+    .nav{
+      display: flex;                  /* FLEXBOX */
+      justify-content: space-between;
+      align-items: center;
+
+      position: sticky;              /* POSITION */
+      top: 0;
+
+      background-color: white;
+
+      padding: 15px 30px;            /* PADDING */
+
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+
+      z-index: 1000;
+    }
+
+
+    /* ===== LEFT NAV ===== */
+
+    .left-nav{
+      display: flex;
+      align-items: center;
+    }
+
+    .logo{
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    .nav-title{
+      margin-left: 10px;             /* MARGIN */
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+
+    /* ===== RIGHT NAV ===== */
+
+    .right-nav{
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-link{
+      text-decoration: none;
+      color: darkgreen;
+      font-size: 24px;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover{
+      color: black;
+    }
+
+
+    /* ===== HERO SECTION ===== */
+
+    .hero{
+      width: 90%;                    /* RESPONSIVE WIDTH */
+      max-width: 1000px;
+
+      margin: 100px auto;
+
+      text-align: center;
+    }
+
+    .hero-title{
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text{
+      font-size: 24px;
+      color: rgb(80,80,80);
+      line-height: 40px;
+    }
+
+    .hero-btn{
+      margin-top: 30px;
+
+      padding: 15px 30px;
+
+      font-size: 22px;
+
+      border: none;
+      border-radius: 10px;
+
+      background-color: black;
+      color: white;
+
+      cursor: pointer;
+
+      transition: 0.3s;
+    }
+
+    .hero-btn:hover{
+      transform: scale(1.05);
+    }
+
+
+    /* ===== CARDS SECTION ===== */
+
+    .cards{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      gap: 30px;
+
+      width: 90%;
+
+      margin: auto auto 100px auto;
+    }
+
+    .card{
+      width: 300px;
+
+      background-color: white;
+
+      padding: 20px;
+
+      border-radius: 20px;
+
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+
+      transition: 0.3s;
+    }
+
+    .card:hover{
+      transform: translateY(-10px);
+    }
+
+    .card-title{
+      font-size: 30px;
+    }
+
+    .card-text{
+      font-size: 18px;
+      color: gray;
+      line-height: 28px;
+    }
+
+
+    /* ===== RESPONSIVE DESIGN ===== */
+
+    @media(max-width:700px){
+
+      .nav{
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero-title{
+        font-size: 45px;
+      }
+
+      .nav-link{
+        font-size: 18px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <!-- ===== NAVBAR ===== -->
+
+  <nav class="nav">
+
+    <div class="left-nav">
+
+      <img src="images/logo.png" class="logo">
+
+      <p class="nav-title">
+        UC
+      </p>
+
+    </div>
+
+
+    <div class="right-nav">
+
+      <a href="#" class="nav-link">Home</a>
+
+      <a href="#" class="nav-link">About</a>
+
+      <a href="#" class="nav-link">Projects</a>
+
+      <a href="#" class="nav-link">Contact</a>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- ===== HERO SECTION ===== -->
+
+  <section class="hero">
+
+    <h1 class="hero-title">
+      Unlimited Creativity
+    </h1>
+
+    <p class="hero-text">
+      Learn HTML and CSS by building real projects.
+      Understand flexbox, position, spacing,
+      responsiveness and modern layouts.
+    </p>
+
+    <button class="hero-btn">
+      Start Exploring
+    </button>
+
+  </section>
+
+
+
+  <!-- ===== CARDS ===== -->
+
+  <section class="cards">
+
+    <div class="card">
+
+      <h2 class="card-title">
+        Flexbox
+      </h2>
+
+      <p class="card-text">
+        Flexbox helps align items horizontally
+        and vertically in modern websites.
+      </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <h2 class="card-title">
+        Position
+      </h2>
+
+      <p class="card-text">
+        Position controls where elements stay
+        on the screen like sticky navbars.
+      </p>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <h2 class="card-title">
+        Responsive
+      </h2>
+
+      <p class="card-text">
+        Responsive design makes websites
+        look good on mobile and desktop.
+      </p>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
